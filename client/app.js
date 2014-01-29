@@ -12,7 +12,7 @@ Template.form.events({
       if (error) {
         alert("Shit happens, the email was not sent!");
       } else {
-        $form.reset();
+        $("[type=reset]", $form).click();
         alert("An email was sent from '" + data.from + "' to '" + data.to + "'");
       }
     });
