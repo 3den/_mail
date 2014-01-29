@@ -1,12 +1,14 @@
-Template.form.greeting = function () {
-  return "Welcome to _mail.";
-};
-
 Template.form.events({
   'submit form' : function (e) {
     e.preventDefault();
-    var target = $(e.target);
+    var $form = $(e.target), data = {
+      from: $("#email_from", $form).val(),
+      to: $("#email_to", $form).val(),
+      subject: $("#email_subject", $form).val(),
+      body: $("#email_body", $form).val()
+    };
 
-    console.log(target);
+    console.log($form, data);
   }
 });
+

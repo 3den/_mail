@@ -5,6 +5,7 @@
 <body>
   <header>
     <h1>_M41L <small>Send emails from "4ny0ne" to "3very0ne".</small></h1>
+    <div id="alert"></div>
   </header>
   <section class="content">{{> form}}</section>
   <footer>
@@ -17,14 +18,14 @@
     <fieldset>
       <label for="email_from">From</label>
       <div class="form-input">
-        <input type="text" name="email[from]" id="email_from" required>
+        <input type="email" name="email[from]" id="email_from" required>
       </div>
     </fieldset>
 
     <fieldset>
       <label for="email_to">To</label>
       <div class="form-input">
-        <input type="text" name="email[to]" id="email_to" required>
+        <input type="email" name="email[to]" id="email_to" required>
       </div>
     </fieldset>
 
