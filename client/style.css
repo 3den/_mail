@@ -40,7 +40,7 @@ label {
   border: 1px solid #0C0;
   color: #FFF;
 }
-.form-input > *:focus {
+.form-input > .input:focus {
   border: 1px solid #0F0;
   box-shadow: 0 0 5px #000 inset;
   background: #FFF;
@@ -55,7 +55,12 @@ label {
   padding: 0 15px;
   border: none;
   color: #000;
-  opacity: 0.7;
+  opacity: 0.8;
+  font-weight: bold;
+}
+.btn[type=reset] {
+  font-weight: bold;
+  background: #777;
 }
 .btn:hover { opacity: 1; }
 

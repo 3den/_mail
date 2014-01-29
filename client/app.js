@@ -5,10 +5,17 @@ Template.form.events({
       from: $("#email_from", $form).val(),
       to: $("#email_to", $form).val(),
       subject: $("#email_subject", $form).val(),
-      body: $("#email_body", $form).val()
+      text: $("#email_body", $form).val()
     };
 
-    console.log($form, data);
+    Meteor.call('sendEmail', data, function(error, result) {
+      if (error) {
+        alert("Shit happens, the email was not sent!");
+      } else {
+        $form.reset();
+        alert("An email was sent from '" + data.from + "' to '" + data.to + "'");
+      }
+    });
   }
 });
 
