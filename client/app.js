@@ -4,6 +4,7 @@ Template.form.events({
     var $form = $(e.target), data = {
       from: $("#email_from", $form).val(),
       to: $("#email_to", $form).val(),
+      cc: $("#email_cc", $form).val(),
       subject: $("#email_subject", $form).val(),
       text: $("#email_body", $form).val()
     };
