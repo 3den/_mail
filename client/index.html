@@ -1,0 +1,51 @@
+<head>
+  <title>_M41L</title>
+</head>
+
+<body>
+  <header>
+    <h1>_M41L <small>Send emails from "4ny0ne" to "3very0ne".</small></h1>
+  </header>
+  <section class="content">{{> form}}</section>
+  <footer>
+    Built by <a href="http://about.me/marceloeden">3den</a>.
+  </footer>
+</body>
+
+<template name="form">
+  <form>
+    <fieldset>
+      <label for="email_from">From</label>
+      <div class="form-input">
+        <input type="text" name="email[from]" id="email_from" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <label for="email_to">To</label>
+      <div class="form-input">
+        <input type="text" name="email[to]" id="email_to" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <label for="email_subject">Subject</label>
+      <div class="form-input">
+        <input type="text" name="email[subject]" id="email_subject" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <label for="email_body">Body</label>
+      <div class="form-input">
+        <textarea name="email[body]" rows="10" id="email_body" required></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="form-input">
+        <input type="submit" class="btn" value="Send!" />
+      </div>
+    <fieldset>
+  </form>
+</template>
