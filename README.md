@@ -7,7 +7,7 @@ This code is released under the MIT license.
 
 ## Deploy Instructions
 
-To deploy it your self do, on a mac or linux you need to install (meteor)[http://docs.meteor.com/], bellow are some simple steps.
+To deploy it your self do, on a mac or linux you need to install meteor (http://docs.meteor.com/), bellow are some simple steps to deploy it.
 
 ```
 curl https://install.meteor.com | /bin/sh
